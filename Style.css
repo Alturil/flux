@@ -1,0 +1,104 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    line-height: 1.5em;
+    border-bottom: solid 10px blueviolet;
+}
+
+h1 {
+    background-color: blueviolet;
+    color: white;
+    margin: 0;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+section#introduction {
+    padding: 1em;
+}
+
+a {
+    color: blueviolet;
+}
+
+header {
+    padding: 0.5em;
+    display: flex;
+    border-bottom: 2px solid blueviolet;        
+}
+
+header .column:first-of-type {
+    align-self: center;
+}
+
+header h2 {
+    color: blueviolet;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#rerun {
+    background: blueviolet;
+    color: white;
+    border-radius: 0.4em;    
+    text-align: center;
+    padding: 0.8em 1em;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;    
+    cursor: pointer;
+}
+
+#rerun:hover {
+    color: yellow;
+}
+
+body > p {
+    padding-left: 1em;
+    color: grey;
+}
+
+/* Results */
+
+#results article {
+    background-color: #f3f3f3;
+    padding: 0.5em;
+    display: flex;
+    margin: 1em 0;
+}
+
+.column {
+    margin: 0.5em;
+}
+
+.column:first-of-type {
+    flex-grow: 1;
+}
+
+.column:last-of-type {
+    flex-basis: 15%;
+    flex-shrink: 0;
+}
+
+.column h3 {
+    margin: 0 0 0.5em 0;
+}
+
+.column p {
+    margin: 0;
+}
+
+.result_text {
+    border: 3px solid blueviolet;
+    border-radius: 0.4em;
+    color: blueviolet;
+    text-align: center;
+    padding: 0.5em;
+    text-transform: capitalize;
+}
