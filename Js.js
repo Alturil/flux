@@ -15,25 +15,20 @@ window.addEventListener('DOMContentLoaded', function(){
         // Run a GET request agains the Trade Me Api
         const response = await fetch("https://api.trademe.co.nz/v1/Categories/UsedCars.json?with_counts=true");
         const responseBody = await response.json();
-        let Subcategories = responseBody.Subcategories;        
-        
-        // Get specific data from the response body
-        let AmountOfUsedCars = GetAmountOfUsedCars(Subcategories);
-        let CollectionContainsMake = GetCollectionContainsMake(Subcategories, "Kia");
-        let AmountOfCarsOfMake = GetAmountOfCarsOfMake(Subcategories, "Kia");
-        let CollectionDoesNotContainMake = GetCollectionDoesNotContainMake(Subcategories, "Hispano Suiza");
+        let Subcategories = responseBody.Subcategories;
 
-        // Log the entire response body for inspection
         let now = new Date();
+        
+        // Log the entire response body for inspection        
         console.log(`Last run: ${now}`);
         console.log(responseBody);
         
         // Display the results on the page
         last_run.innerHTML = now;
-        results[1].innerHTML = AmountOfUsedCars;
-        results[2].innerHTML = CollectionContainsMake;
-        results[3].innerHTML = AmountOfCarsOfMake;
-        results[4].innerHTML = CollectionDoesNotContainMake;
+        results[1].innerHTML = GetAmountOfUsedCars(Subcategories);
+        results[2].innerHTML = GetCollectionContainsMake(Subcategories, "Kia");
+        results[3].innerHTML = GetAmountOfCarsOfMake(Subcategories, "Kia");
+        results[4].innerHTML = GetCollectionDoesNotContainMake(Subcategories, "Hispano Suiza");
 
         // Functions to get specific data
 
