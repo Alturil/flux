@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Test exercise</title>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <script src="Js.js"></script>
+    </head>
+    <body>
+
+        <h1>Test exercise</h1>
+
+        <section id="introduction">
+            <p>One of the simplest, most direct approaches for automating this task is using Javascript to execute the requests
+            and displaying the results in an HTML page. The main advantage of this approach is eliminating virtually any
+            requirements, as any user with a browser and an internet connection can see the results.</p>
+            <p>I used the native <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">fetch</a> function, which
+            drastically simplifies writing async code, and vainilla HTML/CSS/JS code for the rest. Feel free to hit F12 to see the console log 
+            if you want to inspect the full response body.</p>
+        </section>
+
+        <header>
+            <div class="column">
+                <h2>Script results</h2>
+            </div>
+            <div class="column">
+                <span id="rerun">Re-run &#9654;</span>
+            </div>            
+        </header>
+
+        <p><b>Last run:</b> <span id="last_run"></span></p>
+
+        <section id="results">
+            <article>
+                <div class="column">
+                    <h3>
+                        Description:
+                    </h3>
+                    <p>
+                        Return how many named brands of used cars are available in the TradeMe <b>UsedCars</b> category.
+                    </p>                    
+                </div>
+                <div class="column">
+                    <h3>Result:</h3>
+                    <p class="result_text"></p>
+                </div>
+            </article>        
+            <article>
+                <div class="column">
+                    <h3>
+                        Description:
+                    </h3>
+                    <p>
+                        Check that the brand <b>‘Kia’</b> exists.
+                    </p>                    
+                </div>
+                <div class="column">
+                    <h3>Result:</h3>
+                    <p class="result_text"></p>
+                </div>
+            </article>
+            <article>
+                <div class="column">
+                    <h3>
+                        Description:
+                    </h3>
+                    <p>
+                        Return <b>the current number</b> of Kia cars listed.
+                    </p>                    
+                </div>
+                <div class="column">
+                    <h3>Result:</h3>
+                    <p class="result_text"></p>
+                </div>
+            </article>
+            <article>
+                <div class="column">
+                    <h3>
+                        Description:
+                    </h3>
+                    <p>
+                        Check that the brand <b>‘Hispano Suiza’</b> does not exist.
+                    </p>                    
+                </div>
+                <div class="column">
+                    <h3>Result:</h3>
+                    <p class="result_text"></p>
+                </div>
+            </article>
+        </section>
+
+    </body>
+</html>
